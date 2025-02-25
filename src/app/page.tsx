@@ -75,6 +75,8 @@ const Home = () => {
       p="100px"
       direction="column"
       gap="2rem"
+      bgColor="#09090B"
+      fontFamily="Poppins"
     >
       <Flex
         w={{ base: "350px", lg: "400px" }}
@@ -90,7 +92,7 @@ const Home = () => {
         direction="column"
         gap="2rem"
       >
-        <Text fontWeight="800" fontSize="large">
+        <Text fontWeight="800" fontSize="large" color="white">
           Conversor de PJ para CLT
         </Text>
         <Field.Root>
@@ -119,7 +121,11 @@ const Home = () => {
       >
         {showDiscountText && (
           <>
-            <Text fontSize="14px" p={{ base: "1rem", lg: "auto" }}>
+            <Text
+              fontSize="14px"
+              p={{ base: "1rem", lg: "auto" }}
+              color="white"
+            >
               O cálculo de valores considera um desconto de {discountRate}% para
               mostrar a estimativa, na sua empresa é diferente? Altere a
               porcentagem abaixo:
